@@ -45,4 +45,3 @@ def tan(number):
 
 if __name__ == "__main__":
     cmd_group()
-    # sin(10)
