@@ -6,6 +6,8 @@ import pandas as pd
 
 @click.group()
 def cmd_group():
+    """Group the functions sin and tan
+    """    
     pass
 
 
@@ -14,10 +16,15 @@ def cmd_group():
     "-n",
     "--number",
     default=1,
-    help="Number of times to print greeting.",
+    help="Number of times to print def sin.",
     show_default=True,  # show default in help
 )
 def sin(number):
+    """Get a list of points between 0 and 2pi and their sinus
+
+    Args:
+        number (int): Given number of times to repeat function
+    """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -28,10 +35,15 @@ def sin(number):
     "-n",
     "--number",
     default=1,
-    help="Number of times to print greeting.",
+    help="Number of times to print def tan.",
     show_default=True,  # show default in help
 )
 def tan(number):
+    """Get a list of points between 0 and 2pi and their tangent
+
+    Args:
+        number (int): Given number of times to repeat function
+    """  
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
