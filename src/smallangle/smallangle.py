@@ -10,7 +10,6 @@ def cmd_group():
 
 
 @cmd_group.command()
-@click.argument("number", type=int)
 @click.option(
     "-n",
     "--number",
@@ -25,7 +24,6 @@ def sin(number):
 
 
 @cmd_group.command()
-@click.argument("number", type=int)
 @click.option(
     "-n",
     "--number",
