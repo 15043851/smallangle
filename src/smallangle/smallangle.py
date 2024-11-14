@@ -21,9 +21,6 @@ def cmd_group():
 )
 def sin(number):
     """Get a list (with length 'number') of points between 0 and 2pi and their sinus
-
-    Args:
-        number (int): Given number of times to repeat function
     """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
@@ -40,9 +37,6 @@ def sin(number):
 )
 def tan(number):
     """Get a list (with length 'number') of points between 0 and 2pi and their tangent
-
-    Args:
-        number (int): Given number of times to repeat function
     """  
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
