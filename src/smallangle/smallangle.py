@@ -20,7 +20,7 @@ def cmd_group():
     show_default=True,  # show default in help
 )
 def sin(number):
-    """Get a list of points between 0 and 2pi and their sinus
+    """Get a list (with length 'number') of points between 0 and 2pi and their sinus
 
     Args:
         number (int): Given number of times to repeat function
@@ -39,7 +39,7 @@ def sin(number):
     show_default=True,  # show default in help
 )
 def tan(number):
-    """Get a list of points between 0 and 2pi and their tangent
+    """Get a list (with length 'number') of points between 0 and 2pi and their tangent
 
     Args:
         number (int): Given number of times to repeat function
