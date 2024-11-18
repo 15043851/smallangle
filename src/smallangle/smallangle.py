@@ -6,7 +6,7 @@ import pandas as pd
 
 @click.group()
 def cmd_group():
-    """Group the functions sin and tan
+    """Access both function sin and function tan in terminal with smallangle
     """    
     pass
 
